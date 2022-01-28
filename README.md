@@ -81,7 +81,7 @@ Le dépôt Git de ce cours doit servir de modèle de structuration de données e
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anisshl/dicoCo/HEAD)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anisshl/dicoCo/HEAD?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fanis_sahli_App.ipynb)
+[![Voila]](https://mybinder.org/v2/gh/anisshl/dicoCo/HEAD?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fanis_sahli_App.ipynb)
 
 
 
