@@ -7,4 +7,7 @@ seaborn==0.11.0
 numpy==1.19.5
 ipympl==0.5.8
 ipywidgets==7.5.0
+selenium==4.1.0
+pyautogui==0.9.53
+voila==0.2.7
 
