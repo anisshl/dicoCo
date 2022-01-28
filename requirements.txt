@@ -10,4 +10,3 @@ fuzzywuzzy==0.18.0
 selenium==4.1.0
 pyautogui==0.9.53
 voila==0.2.7
-
