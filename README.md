@@ -79,9 +79,31 @@ Les projets réalisés doivent être déposées sous forme de dépôt GitHub. Le
 
 Le dépôt Git de ce cours doit servir de modèle de structuration de données et codes. Le readme.md devra contenir un lien pour le lancement de l'application via myBinder (en mode notebook et en mode voilà).
 
+## Mon projet
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anisshl/dicoCo.git/HEAD)
 
 [Voila](https://mybinder.org/v2/gh/anisshl/dicoCo.git/HEAD?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fanis_sahli_App.ipynb)
+
+Travail réalisé avec le site [Cambridge]https://dictionary.cambridge.org/fr/
+
+L'appliscation est composée de 3 parties.
+
+La première partie consiste à récupérer un fichier CSV qui a été conçu à l'aide du notebook anis_sahli_manipDataframe. Dans une partie observation et investigation au sein de notre the notebook je tente d'apporter des éléments de réponses à la question à la question "isoler les mots double qui n'existent pas dans Bigi, comprendre les différentes causes et tenter d'expliquer comment résoudre les différents problèmes".
+
+En effet il semblerait que certains caractères soient en réalité composés de 2 caractères dans le mot d'origine or dans notre dictionnaire de matching des caractères chacun d'entre eux est de taille 1. Cela semble être notamment le cas pour des mots contenant le caractère suivant " ' ".
+Un peu plus de 5000 mots finissent donc par ne matcher avec aucun mot de la table Bigi.
+
+Une proposition a donc été faite, celle de se servir d'une librairie de text machine comme par exemple "fuzzywuzzy". Avec un rapide exemple, on montre que même sans aucune data préparation, nous sommes capable d'identifier des similitudes.
+
+La deuxième partie se compose d'une fonction de scrapping qui permet de scrapper à la demande de l'utilisateur.
+Cette fonction permettra à ce dernier de saisir une entrée (regex possible) et de retourner en sortie le résultat de la recherche. Si en dehors du mot recherché, rien ne s'affiche, alors cela revient à dire qu'aucun résultat n'est trouvé sur le site. La fonction de scrapping utilisée dans l'application finale a légèrement été modifiée par rapport à sa première version dans le fichier anis_sahli_scrapping.
+
+Dans cette partie j'ai également tenté d'enregisrter des fichiers audios pour pouvoir utiliser la librairie librosa. Malheureusement avec le site Cambridge à partir du lien du fichier MP3, une erreur est retournée lorsque l'on souhaite y accéder.
+
+J'ai donc essayer de contourner c problème avec la librairie selenium pour simuler en quelques sortes le comportement humain, mais malheureusement le paramètre "download.default_directory" ne fonctionne pas pour ma part. Il m'est donc impossible de choisir le dossier de téléchargement souhaité pour mon fichier MP3 et celui-ci se fait donc dans un dépôt par défaut. Vous trouverez un extrait de ce code dans le notebook tentative_selenim_App dans la rubrique test selenium.
+
+La troisième partie consiste tout simplement en l'affichage de l'interface avec les différentes possibilités de saisies par l'utilisateur et le retour de l'ensemble des résultats demandés.
 
 
 
