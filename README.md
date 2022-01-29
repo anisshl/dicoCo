@@ -85,7 +85,7 @@ Le dépôt Git de ce cours doit servir de modèle de structuration de données e
 
 [Voila](https://mybinder.org/v2/gh/anisshl/dicoCo.git/HEAD?urlpath=%2Fvoila%2Frender%2Fnotebook%2Fanis_sahli_App.ipynb)
 
-Travail réalisé avec le site [Cambridge]https://dictionary.cambridge.org/fr/
+Travail réalisé avec le site [Cambridge](https://dictionary.cambridge.org/fr/)
 
 L'appliscation est composée de 3 parties.
 
